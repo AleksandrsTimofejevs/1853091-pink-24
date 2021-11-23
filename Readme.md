@@ -1,7 +1,7 @@
 # Личный проект «Пинк» 
 
 * Студент: [Aleksandrs Timofejevs](https://up.htmlacademy.ru/adaptive/24/user/1853091).
-* Наставник: `Неизвестно`.
+* Наставник: [Евгений Петров](https://htmlacademy.ru/profile/id617077).
 
 ---
 
