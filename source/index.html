@@ -29,7 +29,7 @@
             <a href="./photos.html">Фотографии</a>
           </li>
           <li class="main-nav__item">
-            <a href="./contest.html">Конкурс</a>
+            <a href="./form.html">Конкурс</a>
           </li>
           <li class="main-nav__item">
             <a href="http://htmlacademy.ru">HTML Academy</a>
@@ -59,49 +59,49 @@
           <p class="intro__prompt">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
         </header>
         <div class="intro__main">
-          <h2 class="main__title">Устали от серости мегаполиса? Нам есть, что вам предложить!</h2>
-          <dl class="main__list">
-            <div class="main__item main__item--mood">
-              <dt class="main__fact">Поднимает настроение</dt>
-              <dd class="main__description">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</dd>
+          <h2 class="intro__title">Устали от серости мегаполиса? Нам есть, что вам предложить!</h2>
+          <dl class="intro__list">
+            <div class="intro__item intro__item--mood">
+              <dt class="intro__fact">Поднимает настроение</dt>
+              <dd class="intro__description">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</dd>
             </div>
-            <div class="main__item main__item--change">
-              <dt class="main__fact">Меняет мир вокруг</dt>
-              <dd class="main__description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</dd>
+            <div class="intro__item intro__item--change">
+              <dt class="intro__fact">Меняет мир вокруг</dt>
+              <dd class="intro__description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</dd>
             </div>
-            <div class="main__item main__item--friends">
-              <dt class="main__fact">Заводит новых друзей</dt>
-              <dd class="main__description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</dd>
+            <div class="intro__item intro__item--friends">
+              <dt class="intro__fact">Заводит новых друзей</dt>
+              <dd class="intro__description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</dd>
             </div>
-            <div class="main__item main__item--effect">
-              <dt class="main__fact">Эффект на 24 часа!</dt>
-              <dd class="main__description">Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!</dd>
-              <a href="#" class="main__description-link">Узнать больше об исследовании</a>
+            <div class="intro__item intro__item--effect">
+              <dt class="intro__fact">Эффект на 24 часа!</dt>
+              <dd class="intro__description">Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!</dd>
+              <a href="#" class="intro__description-link">Узнать больше об исследовании</a>
             </div>
           </dl>
         </div>
       </div>
     </section>
-    <section class="feedback">
-      <div class="feedback__wrapper slider">
+    <section class="feedback-slider">
+      <div class="feedback-slider__wrapper">
         <h2 class="visually-hidden">Отзывы о приложении PINK</h2>
-        <ul class="feedback__list slider__list">
-          <li class="feedback__item slider__item">
-            <figure class="feedback__container">
-              <blockquote class="feedback__quote">
-                <p class="feedback__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+        <ul class="feedback-slider__list">
+          <li class="feedback-slider__item">
+            <figure class="feedback-slider__container">
+              <blockquote class="feedback-slider__quote">
+                <p class="feedback-slider__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
               </blockquote>
-              <figcaption class="feedback__author">
-                <cite class="feedback__author-name">Николай Петров</cite>
-                <span class="feedback__author-description">25 лет, водитель трамвая</span>
+              <figcaption class="feedback-slider__author">
+                <cite class="feedback-slider__author-name">Николай Петров</cite>
+                <span class="feedback-slider__author-description">25 лет, водитель трамвая</span>
               </figcaption>
             </figure>
           </li>
         </ul>
-        <p class="feedback__toggles slider__toggles">
-          <button class="slider__toggle slider__toggle--current" type="button">1</button>
-          <button class="slider__toggle" type="button">2</button>
-          <button class="slider__toggle" type="button">3</button>
+        <p class="feedback-slider__toggles">
+          <button class="feedback-slider__toggle feedback-slider__toggle--current" type="button">1</button>
+          <button class="feedback-slider__toggle" type="button">2</button>
+          <button class="feedback-slider__toggle" type="button">3</button>
         </p>
       </div>
     </section>
@@ -114,7 +114,7 @@
             <h3 class="pricing__tariff">База</h3>
             <span class="pricing__charge">1,99 USD</span>
           </th>
-          <th class="pricing__header slider__header">
+          <th class="pricing__header pricing__header--current">
             <h3 class="pricing__tariff">Стандарт</h3>
             <span class="pricing__charge">3,99 USD</span>
           </th>
@@ -128,7 +128,7 @@
           <td class="pricing__cell pricing__cell--included">
             <span class="visually-hidden">Включено в тариф</span>
           </td>
-          <td class="pricing__cell pricing__cell--included slider__cell">
+          <td class="pricing__cell pricing__cell--included pricing__cell--current">
             <span class="visually-hidden">Включено в тариф</span>
           </td>
           <td class="pricing__cell pricing__cell--included">
@@ -140,7 +140,7 @@
           <td class="pricing__cell pricing__cell--excluded">
             <span class="visually-hidden">В тариф не входит</span>
           </td>
-          <td class="pricing__cell pricing__cell--included slider__cell">
+          <td class="pricing__cell pricing__cell--included pricing__cell--current">
             <span class="visually-hidden">Включено в тариф</span>
           </td>
           <td class="pricing__cell pricing__cell--included">
@@ -152,7 +152,7 @@
           <td class="pricing__cell pricing__cell--excluded">
             <span class="visually-hidden">В тариф не входит</span>
           </td>
-          <td class="pricing__cell pricing__cell--excluded slider__cell">
+          <td class="pricing__cell pricing__cell--excluded pricing__cell--current">
             <span class="visually-hidden">В тариф не входит</span>
           </td>
           <td class="pricing__cell pricing__cell--included">
@@ -160,10 +160,10 @@
           </td>
         </tr>
       </table>
-      <p class="pricing__toggles slider__toggles">
-        <button class="slider__toggle" type="button">1</button>
-        <button class="slider__toggle slider__toggle--current" type="button">2</button>
-        <button class="slider__toggle" type="button">3</button>
+      <p class="pricing__toggles">
+        <button class="pricing__toggle" type="button">1</button>
+        <button class="pricing__toggle pricing__toggle--current" type="button">2</button>
+        <button class="pricing__toggle" type="button">3</button>
       </p>
     </section>
     <section class="contacts">
@@ -220,7 +220,7 @@
         </ul>
       </div>
       <div class="page-footer__copyright">
-        <a class="page-footer__copyright--link" href="http://htmlacademy.ru">
+        <a class="page-footer__link" href="http://htmlacademy.ru">
           <span class="visually-hidden">Сайт разработан в HTML Academy</span>
         </a>
       </div>
