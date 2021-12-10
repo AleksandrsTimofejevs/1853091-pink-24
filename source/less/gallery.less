@@ -1,6 +1,8 @@
 .gallery {
-  &__wrapper {
-    padding: 0 20px;
+
+  &__main {
+    display: flex;
+    flex-direction: column;
   }
 
   &__list {
@@ -22,7 +24,12 @@
   }
 
   &__picture {
+    margin-left: 20px;
     margin-bottom: 26px;
+  }
+
+  &__picture--panorama {
+    margin-left: 0;
   }
 
   &__item-title {
