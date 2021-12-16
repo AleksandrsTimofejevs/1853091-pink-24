@@ -16,6 +16,16 @@
 
 .intro__item {
   margin-bottom: 43px;
+
+  &--friends::after {
+    content: "";
+    display: block;
+    width: 157px;
+    height: 320px;
+    margin: 0 auto;
+    background: url("../img/iphone-screen-3.png") 10px 77px no-repeat,
+      url("../img/iphone-3.png") 0 40px no-repeat;
+  }
 }
 
 .intro__title {
@@ -37,14 +47,4 @@
   line-height: 24px;
   font-weight: 400;
   margin: 0;
-}
-
-.intro__item--friends::after {
-  content: "";
-  display: block;
-  width: 157px;
-  height: 320px;
-  margin: 0 auto;
-  background: url("../img/iphone-screen-3.png") 10px 77px no-repeat,
-    url("../img/iphone-3.png") 0 40px no-repeat;
 }
