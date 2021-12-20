@@ -1,41 +1,60 @@
 .page-header {
-  min-height: 237px;
+  min-height: 733px;
   display: flex;
+  flex-direction: column;
   flex-wrap: wrap;
   color: rgba(255, 255, 255, 1);
   background-color: rgba(29, 38, 49, 1);
-  background-image: url("../img/back-desktop.jpg");
-  background-position: 50% 0;
+  background-image: url("../img/hand-phone.png"), url("../img/back-desktop.jpg");
+  background-position: 50% 30%, 50% -312px;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 320px 286px, cover;
+
+  @media (min-width: @tablet-width) {
+    background-position: 90% 90%, 50% 50%;
+    background-size: 472px 400px, cover;
+  }
 }
 
 .page-header__image {
   fill: rgba(255, 255, 255, 1);
 }
 
-.page-header__demo {
-  position: relative;
+.page-header__download {
+  @media (min-width: @tablet-width) {
+    width: 300px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-left: 130px;
+  }
 }
 
 .page-header__title {
+  margin-bottom: 320px;
   font-size: 24px;
   line-height: 29px;
   font-weight: 300;
   text-align: center;
-}
 
-.page-header__result {
-  position: absolute;
-  top: 81px;
-  left: 105px;
+  @media (min-width: @tablet-width) {
+    margin-bottom: 39px;
+    font-size: 40px;
+    line-height: 48px;
+  }
 }
 
 .page-header__appstore-wrapper {
   display: flex;
   flex-wrap: wrap;
+  flex-direction: column;
   justify-content: space-around;
   padding: 0 20px;
+}
+
+.page-header__os-wrapper {
+  display: flex;
+  justify-content: space-between;
 }
 
 .page-header__appstore-button {

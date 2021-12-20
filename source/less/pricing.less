@@ -2,6 +2,10 @@
   min-height: 506px;
   padding: 140px 0 50px;
   background: url("../img/grey-background-table.png") no-repeat;
+
+  @media (min-width: @desktop-width) {
+    padding: 0 130px;
+  }
 }
 
 .pricing__tariff {
@@ -19,6 +23,10 @@
 
 .pricing__hidden {
   display: none;
+
+  @media (min-width: @tablet-width) {
+    display: block;
+  }
 }
 
 .pricing__header {
@@ -34,6 +42,10 @@
   line-height: 30px;
   font-weight: 400;
   text-transform: uppercase;
+
+  @media (min-width: @desktop-width) {
+    width: 234px;
+  }
 }
 
 .pricing__toggles {
