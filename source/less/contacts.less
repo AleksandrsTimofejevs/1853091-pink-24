@@ -1,8 +1,22 @@
+.contacts {
+  @media (min-width: @tablet-width) {
+    padding: 0 20px;
+  }
+}
+
 .contacts__title {
   font-size: 24px;
   line-height: 29px;
   font-weight: 300;
   text-align: center;
+}
+
+.contacts__list {
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
 }
 
 .contacts__method {

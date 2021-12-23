@@ -1,6 +1,10 @@
 .feedback-slider__wrapper {
   min-height: 364px;
   padding: 0 20px;
+
+  @media (min-width: @desktop-width) {
+    padding: 0 130px;
+  }
 }
 
 .feedback-slider__container {
@@ -49,4 +53,22 @@
 
 .feedback-slider__toggles {
   text-align: center;
+}
+
+.feedback-slider__toggle {
+  @media (min-width: @desktop-width) {
+    &:not(:last-child):not(:first-child) {
+      display: none;
+    }
+
+    &:first-child {
+      position: absolute;
+      left: 80px;
+    }
+
+    &:last-child {
+      position: absolute;
+      right: 80px;
+    }
+  }
 }
