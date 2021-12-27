@@ -1,26 +1,16 @@
-.location {
-  position: relative;
-  min-height: 200px;
-  background: url("../img/triangle-white-footer.png") 0 -90px no-repeat,
-    url("../img/map.jpg") no-repeat;
-}
+.location__map {
+  width: 100%;
+  border: none;
 
-.location__tag {
-  position: absolute;
-  top: 95px;
-  left: 142px;
-  width: 36px;
-  height: 36px;
-  background: url("../img/location-tag-background.png") no-repeat;
+  @media (min-width: @mobile-width) {
+    height: 200px;
+  }
 
-  &::after {
-    position: absolute;
-    top: 10px;
-    left: 10px;
-    content: "";
-    width: 16px;
-    height: 16px;
-    background-color: rgba(210, 40, 86, 1);
-    border-radius: 50%;
+  @media (min-width: @tablet-width) {
+    height: 374px;
+  }
+
+  @media (min-width: @desktop-width) {
+    height: 502px;
   }
 }
