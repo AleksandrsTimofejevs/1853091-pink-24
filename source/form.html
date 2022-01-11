@@ -10,7 +10,7 @@
 <body class="page__body">
   <h1 class="visually-hidden">Конкурс среди пользователей приложения PINK</h1>
   <header class="page-header">
-    <nav class="main-nav">
+    <nav class="main-nav main-nav--closed main-nav--nojs">
       <a href="#" class="page-header__logo">
         <svg class="page-header__image" width="74" height="23" viewBox="0 0 74 23" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M0.00496827 1.54857C0.00487772 1.21254 0.135804 0.889818 0.369742 0.649431C0.60368 0.409043 0.922049 0.27008 1.25676 0.262266H8.39001C13.4469 0.262266 16.7751 2.9645 16.7751 7.39179V7.45162C16.7751 12.2977 12.7415 14.8105 7.97274 14.8105H2.53836V21.611C2.55394 21.7874 2.53277 21.9651 2.47619 22.1329C2.41961 22.3006 2.32887 22.4547 2.20973 22.5854C2.09058 22.716 1.94565 22.8204 1.78416 22.8918C1.62266 22.9631 1.44812 23 1.27166 23C1.0952 23 0.920671 22.9631 0.759173 22.8918C0.597674 22.8204 0.452744 22.716 0.333602 22.5854C0.21446 22.4547 0.123708 22.3006 0.0671295 22.1329C0.0105515 21.9651 -0.0106138 21.7874 0.00496827 21.611V1.54857ZM8.07209 12.5171C11.7778 12.5171 14.2119 10.5228 14.2119 7.53139V7.47156C14.2119 4.26078 11.8175 2.59556 8.25092 2.59556H2.58804V12.4772L8.07209 12.5171Z"/>
@@ -21,87 +21,105 @@
       </a>
       <button class="main-nav__toggle" type="button">
         <span class="visually-hidden">Открыть меню</span>
-        <svg width="50" height="24" viewBox="0 0 50 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M1.13659 0.00020839C0.986512 -0.00251551 0.837358 0.0214885 0.698091 0.0707781C0.558823 0.120068 0.432317 0.193625 0.326173 0.28703C0.22003 0.380436 0.136442 0.49176 0.0804303 0.614315C0.024419 0.73687 -0.00285856 0.868124 0.000236809 1.00019V3.00016C0.000236809 3.26537 0.119959 3.51972 0.333067 3.70725C0.546174 3.89478 0.83521 4.00014 1.13659 4.00014H48.8634C49.0135 4.00286 49.1626 3.97886 49.3019 3.92957C49.4412 3.88028 49.5677 3.80672 49.6738 3.71332C49.78 3.61991 49.8636 3.50859 49.9196 3.38603C49.9756 3.26348 50.0029 3.13222 49.9998 3.00016V1.00019C49.9998 0.734979 49.88 0.48063 49.6669 0.293097C49.4538 0.105563 49.1648 0.00020839 48.8634 0.00020839H1.13659ZM1.13659 10C0.986512 9.99731 0.837358 10.0213 0.698091 10.0706C0.558823 10.1199 0.432317 10.1935 0.326173 10.2869C0.22003 10.3803 0.136442 10.4916 0.0804303 10.6141C0.024419 10.7367 -0.00285856 10.868 0.000236809 11V13C0.000236809 13.2652 0.119959 13.5195 0.333067 13.7071C0.546174 13.8946 0.83521 14 1.13659 14H48.8634C49.0135 14.0027 49.1626 13.9787 49.3019 13.9294C49.4412 13.8801 49.5677 13.8065 49.6738 13.7131C49.78 13.6197 49.8636 13.5084 49.9196 13.3859C49.9756 13.2633 50.0029 13.132 49.9998 13V11C49.9998 10.7348 49.88 10.4805 49.6669 10.2929C49.4538 10.1054 49.1648 10 48.8634 10H1.13659ZM1.13659 19.9999C0.986512 19.9971 0.837358 20.0211 0.698091 20.0704C0.558823 20.1197 0.432317 20.1933 0.326173 20.2867C0.22003 20.3801 0.136442 20.4914 0.0804303 20.614C0.024419 20.7365 -0.00285856 20.8678 0.000236809 20.9998V22.9998C0.000236809 23.265 0.119959 23.5194 0.333067 23.7069C0.546174 23.8944 0.83521 23.9998 1.13659 23.9998H48.8634C49.0135 24.0025 49.1626 23.9785 49.3019 23.9292C49.4412 23.8799 49.5677 23.8064 49.6738 23.713C49.78 23.6196 49.8636 23.5082 49.9196 23.3857C49.9756 23.2631 50.0029 23.1319 49.9998 22.9998V20.9998C49.9998 20.7346 49.88 20.4803 49.6669 20.2927C49.4538 20.1052 49.1648 19.9999 48.8634 19.9999H1.13659Z" fill="white"/>
-        </svg>
       </button>
       <div class="main-nav__container">
         <ul class="main-nav__list">
           <li class="main-nav__item">
-            <a href="#">Главная</a>
+            <a class="main-nav__link" href="./index.html">Главная</a>
           </li>
           <li class="main-nav__item">
-            <a href="./photos.html">Фотографии</a>
+            <a class="main-nav__link" href="./gallery.html">Фотографии</a>
           </li>
           <li class="main-nav__item">
-            <a href="./form.html">Конкурс</a>
+            <a class="main-nav__link" href="./form.html">Конкурс</a>
           </li>
           <li class="main-nav__item">
-            <a href="http://htmlacademy.ru">HTML Academy</a>
+            <a class="main-nav__link" href="http://htmlacademy.ru">HTML Academy</a>
           </li>
         </ul>
       </div>
     </nav>
     <h2 class="page-header__title">Конкурс на самое безбашенное путешествие с Пинк</h2>
   </header>
+
+
+
   <main class="page-main">
     <section class="apply">
       <div class="apply__wrapper">
         <div class="apply__main">
-          <p class="apply__text">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!</p>
+          <p class="apply__text">Поделитесь своей историей и получите шанс выиграть<br>ценный приз — 1000 миль на вашу бонусную карту!<br>Пожалуйста, заполните форму ниже:</p>
           <form class="apply__form" action="https://echo.htmlacademy.ru/" method="GET">
             <fieldset class="apply__fieldset">
               <div class="apply__container">
                 <label class="apply__input-title">Фамилия</label>
-                <input class="apply__input text" type="text" name="surname" placeholder="Укажите фамилию *" required>
+                <input class="apply__input apply__input--text" type="text" name="surname" placeholder="Укажите фамилию *" required>
               </div>
               <div class="apply__container">
                 <label class="apply__input-title">Имя</label>
-                <input class="apply__input text" type="text" name="name" placeholder="Введите ваше имя *" required>
+                <input class="apply__input apply__input--text" type="text" name="name" placeholder="Введите ваше имя *" required>
               </div>
               <div class="apply__container">
                 <label class="apply__input-title">Отчество</label>
-                <input class="apply__input text"  type="text" name="patronimic" placeholder="Ну и отчество тоже">
+                <input class="apply__input apply__input--text"  type="text" name="patronimic" placeholder="Ну и отчество тоже">
               </div>
             </fieldset>
             <fieldset class="apply__fieldset">
               <legend class="apply__input-legend">Ваши безбашенные достижения в путешествии</legend>
-              <input class="apply__input checkbox" type="checkbox" name="achievments" id="achievments-selfie-with-shark" value="achievments-selfie-with-shark" checked>
-              <label class="apply__choice" for="achievments-selfie-with-shark">Сделал селфи с акулой</label>
-              <input class="apply__input checkbox" type="checkbox" name="achievments" id="achievments-sunburns" value="achievments-sunburns" checked>
-              <label class="apply__choice" for="achievments-sunburns">Обгорел на пляже</label>
-              <input class="apply__input checkbox" type="checkbox" name="achievments" id="achievments-chuck-norriss" value="achievments-chuck-norriss">
-              <label class="apply__choice" for="achievments-chuck-norriss">Видел Чака Норисса</label>
-              <input class="apply__input checkbox" type="checkbox" name="achievments" id="achievments-bought-souvenirs" value="achievments-bought-souvenirs">
-              <label class="apply__choice" for="achievments-bought-souvenirs">Накупил сувениров</label>
-              <input class="apply__input checkbox" type="checkbox" name="achievments" id="achievments-hold-tower" value="achievments-hold-tower" checked>
-              <label class="apply__choice" for="achievments-hold-tower">Удержал башню</label>
-              <input class="apply__input checkbox" type="checkbox" name="achievments" id="achievments-demolished-hotel" value="achievments-demolished-hotel">
-              <label class="apply__choice" for="achievments-demolished-hotel">Разгромил отель</label>
+              <div class="apply__container">
+                <input class="apply__input apply__input--checkbox" type="checkbox" name="achievments" id="achievments-selfie-with-shark" value="achievments-selfie-with-shark" checked>
+                <label class="apply__choice" for="achievments-selfie-with-shark">Сделал селфи с акулой</label>
+              </div>
+              <div class="apply__container">
+                <input class="apply__input apply__input--checkbox" type="checkbox" name="achievments" id="achievments-sunburns" value="achievments-sunburns" checked>
+                <label class="apply__choice" for="achievments-sunburns">Обгорел на пляже</label>
+              </div>
+              <div class="apply__container">
+                <input class="apply__input apply__input--checkbox" type="checkbox" name="achievments" id="achievments-chuck-norriss" value="achievments-chuck-norriss">
+                <label class="apply__choice" for="achievments-chuck-norriss">Видел Чака Норисса</label>
+              </div>
+              <div class="apply__container">
+                <input class="apply__input apply__input--checkbox" type="checkbox" name="achievments" id="achievments-bought-souvenirs" value="achievments-bought-souvenirs">
+                <label class="apply__choice" for="achievments-bought-souvenirs">Накупил сувениров</label>
+              </div>
+              <div class="apply__container">
+                <input class="apply__input apply__input--checkbox" type="checkbox" name="achievments" id="achievments-hold-tower" value="achievments-hold-tower" checked>
+                <label class="apply__choice" for="achievments-hold-tower">Удержал башню</label>
+              </div>
+              <div class="apply__container">
+                <input class="apply__input apply__input--checkbox" type="checkbox" name="achievments" id="achievments-demolished-hotel" value="achievments-demolished-hotel">
+                <label class="apply__choice" for="achievments-demolished-hotel">Разгромил отель</label>
+              </div>
             </fieldset>
             <fieldset class="apply__fieldset">
               <legend class="apply__input-legend">Контактная информация</legend>
               <label class="apply__input-title">Номер телефона</label>
-              <input type="text" class="apply__input text" name="phone-number" placeholder="Номер, пожалуйста">
+              <input type="text" class="apply__input apply__input--text" name="phone-number" placeholder="Номер, пожалуйста">
               <label class="apply__input-title">Адрес почты</label>
-              <input type="text" class="apply__input text" name="email" placeholder="Введите почту *" required>
+              <input type="text" class="apply__input apply__input--text" name="email" placeholder="Введите почту *" required>
             </fieldset>
             <fieldset class="apply__fieldset">
               <legend class="apply__input-legend">С каким приложением путешествовали?</legend>
-              <input class="apply__input radio" type="radio" name="user-os" id="pink-for-ios" value="pink-for-ios" checked>
-              <label class="apply__choice" for="pink-for-ios">Pink для iOS</label>
-              <input class="apply__input radio" type="radio" name="user-os" id="pink-for-android" value="pink-for-android">
-              <label class="apply__choice" for="pink-for-android">Pink для Android</label>
-              <input class="apply__input radio" type="radio" name="user-os" id="pink-for-windows" value="pink-for-windows">
-              <label class="apply__choice" for="pink-for-windows">Windows Phone</label>
+              <div class="apply__container">
+                <input class="apply__input apply__input--radio" type="radio" name="user-os" id="pink-for-ios" value="pink-for-ios" checked>
+                <label class="apply__choice" for="pink-for-ios">Pink для iOS</label>
+              </div>
+              <div class="apply__container">
+                <input class="apply__input apply__input--radio" type="radio" name="user-os" id="pink-for-android" value="pink-for-android">
+                <label class="apply__choice" for="pink-for-android">Pink для Android</label>
+              </div>
+              <div class="apply__container">
+                <input class="apply__input apply__input--radio" type="radio" name="user-os" id="pink-for-windows" value="pink-for-windows">
+                <label class="apply__choice" for="pink-for-windows">Windows Phone</label>
+              </div>
             </fieldset>
             <fieldset class="apply__fieldset">
               <label class="apply__input-legend">Опишите свои эмоции</label>
-              <textarea class="apply__input textarea" name="emotions" cols="30" rows="10" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+              <textarea class="apply__input apply__input--textarea" name="emotions" cols="30" rows="10" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
             </fieldset>
-            <div class="apply__container">
+            <div class="apply__button-container">
               <button class="apply__button" type="submit">Отправить форму</button>
-              <span class="apply__legend">* — обязательные поля</span>
+              <span class="apply__legend"><small class="apply__legend-notice">*</small> — обязательные поля</span>
             </div>
           </form>
         </div>
@@ -124,18 +142,27 @@
         <h2 class="visually-hidden">Мы в социальных сетях</h2>
         <ul class="page-footer__list">
           <li class="page-footer__item">
-            <a href="https://twitter.com/htmlacademy_ru" class="page-footer__link">
+            <a class="page-footer__link" href="https://twitter.com/htmlacademy_ru">
               <span class="visually-hidden">Twitter</span>
+                <svg class="page-footer__emblem" width="18" height="14" viewBox="0 0 18 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M11.5641 0.168904C12.2458 -0.0461515 12.9837 -0.0560928 13.6719 0.140507C14.3602 0.337107 14.9633 0.730138 15.3947 1.26319C16.1053 1.05385 16.8055 0.815959 17.5263 0.606617C17.5164 0.925848 17.4299 1.23907 17.2732 1.52372C17.1165 1.80837 16.8935 2.05738 16.6201 2.2528C16.8726 2.27877 17.1281 2.25112 17.3673 2.17197C17.6064 2.09281 17.8228 1.96424 18 1.79606C17.901 2.20987 17.6999 2.59695 17.4123 2.92708C17.1247 3.2572 16.7585 3.52144 16.3421 3.69916C16.095 9.96988 12.9748 14.1662 5.65332 13.9949H5.14874C4.70595 13.9949 0.731121 13.5667 0 12.2441C1.75201 12.4899 3.53888 12.0976 4.98398 11.1498C3.95423 10.8643 2.13158 10.7026 1.82265 8.40934C2.2108 8.54337 2.6321 8.57306 3.03776 8.49498C1.76087 7.70519 0.339817 7.0391 0.422197 4.99327C0.819634 5.29882 1.3269 5.45507 1.84325 5.43098C1.10183 5.20261 -0.24714 2.30989 0.895881 0.825474C2.82151 2.54778 4.86041 4.17493 8.48512 4.3367C8.71167 2.20522 9.68993 0.777896 11.5641 0.168904Z" fill="#D22856"/>
+                </svg>
             </a>
           </li>
           <li class="page-footer__item">
-            <a href="https://www.facebook.com/htmlacademy" class="page-footer__link">
+            <a class="page-footer__link" href="https://www.facebook.com/htmlacademy">
               <span class="visually-hidden">Facebook</span>
+              <svg class="page-footer__emblem" width="9" height="18" viewBox="0 0 9 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M6.50865 3.19324H9V0H6.02076C2.76125 0.171067 1.59862 2.27138 2.07612 5.81626H0V9.15206H2.07612V18H6.02076V9.15206H8.97924V5.81626H6.01038C5.98962 4.81837 5.96886 3.52587 6.50865 3.19324Z" fill="#D22856"/>
+              </svg>
             </a>
           </li>
           <li class="page-footer__item">
-            <a href="https://www.youtube.com/c/HTMLAcademyRUS" class="page-footer__link">
+            <a class="page-footer__link" href="https://www.youtube.com/c/HTMLAcademyRUS">
               <span class="visually-hidden">YouTube</span>
+              <svg class="page-footer__emblem" width="15" height="13" viewBox="0 0 15 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1.83356 12.8089C1.64633 12.9278 1.42471 12.9941 1.19626 12.9996C0.967817 13.0051 0.74263 12.9495 0.548717 12.8398C0.354804 12.7301 0.200724 12.571 0.105646 12.3824C0.010569 12.1938 -0.0213097 11.984 0.0139762 11.779V1.22097C-0.0213097 1.01605 0.010569 0.806234 0.105646 0.617628C0.200724 0.429021 0.354804 0.269949 0.548717 0.1602C0.74263 0.0504516 0.967817 -0.00512927 1.19626 0.000372265C1.42471 0.0058738 1.64633 0.0722149 1.83356 0.191142L14.2333 5.69284C15.2556 6.13817 15.2556 6.86183 14.2333 7.30716L1.83356 12.8089Z" fill="#D22856"/>
+              </svg>
             </a>
           </li>
         </ul>
@@ -143,9 +170,14 @@
       <div class="page-footer__copyright">
         <a class="page-footer__link" href="http://htmlacademy.ru">
           <span class="visually-hidden">Сайт разработан в HTML Academy</span>
+          <span class="page-footer__text">Разработано</span>
+          <svg width="27" height="34" viewBox="0 0 27 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M13.6426 0.0157537L13.5 0L0 1.40733V26.0129L13.5 34L27 26.0129V1.40733L13.6426 0.0157537ZM25.2344 25.0151L13.5 31.9573L1.76561 25.0151V14.9293L13.4507 21.8451L13.4701 23.0984L5.45351 18.3548L5.44295 19.5801L13.4894 24.3885L13.5088 25.675L5.46408 20.9174L5.45351 22.1427L13.5 26.9511L21.6239 22.1182V20.8929V16.909L25.2432 14.7595L25.2344 25.0151ZM25.2344 13.4519L22.0147 15.3319L20.5325 16.2071L13.4666 12.0201L13.456 13.2454L19.4957 16.818L19.4429 16.8495L19.3126 16.9247L18.4536 17.4166L13.4666 14.4689L13.456 15.6942L17.3921 18.0222L16.4591 18.6314L16.438 18.6436L13.4666 16.902L13.456 18.1273L15.4029 19.2615L13.4155 20.4483L1.7973 13.5762L13.4349 6.61831L25.2344 13.4519ZM25.2344 12.2266L13.4401 5.31075L1.76561 12.2196V2.9897L13.5 1.76442L25.2344 2.9897V12.2266Z" fill="#D22856"/>
+          </svg>
         </a>
       </div>
     </div>
   </footer>
+  <script src="./js/menu.js"></script>
 </body>
 </html>

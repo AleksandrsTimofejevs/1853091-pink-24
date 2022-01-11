@@ -4,6 +4,10 @@
 
 .picture-form__text {
   text-align: center;
+
+  @media (min-width: @tablet-width) {
+    font-size: 18px;
+  }
 }
 
 .picture-form__main {
@@ -28,5 +32,53 @@
   @media (min-width: @tablet-width) {
     display: flex;
     flex-direction: column;
+  }
+}
+
+.picture-form__buttons {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: @desktop-width) {
+    flex-direction: row;
+  }
+}
+
+.picture-form__submit {
+  margin-bottom: 12px;
+  height: 55px;
+  width: 100%;
+  color: rgba(210, 40, 86, 1);
+  font-weight: 700;
+  background-color: none;
+  border: 3px solid rgba(210, 40, 86, 1);
+  border-radius: 30px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 24px;
+    width: 260px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-right: 44px;
+    width: 185px;
+  }
+}
+
+.picture-form__reset {
+  height: 55px;
+  width: 100%;
+  color: rgba(40, 54, 69, 0.1);
+  font-weight: 700;
+  background-color: none;
+  border: 3px solid rgba(40, 54, 69, 0.1);
+  border-radius: 30px;
+
+  @media (min-width: @tablet-width) {
+    width: 260px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 185px;
   }
 }
