@@ -54,16 +54,49 @@
 }
 
 .page-header__logo {
-  height: 23px;
+  display: block;
 }
 
 .page-header__image {
   fill: rgba(255, 255, 255, 1);
-}
 
-.main-nav__toggle {
-  margin-right: 20px;
-  margin-bottom: 23px;
+  &:hover {
+    fill: rgba(210, 40, 86, 1);
+  }
+
+  &:active {
+    fill: rgba(255, 255, 255, 0.3);
+  }
+
+  &--mobile {
+    @media (min-width: @tablet-width) {
+      display: none;
+    }
+  }
+
+  &--tablet {
+    @media (max-width: @mobile-only) {
+      display: none;
+    }
+
+    @media (min-width: @tablet-width) {
+      display: block;
+    }
+
+    @media (min-width: @desktop-width) {
+      display: none;
+    }
+  }
+
+  &--desktop {
+    @media (max-width: @tablet-only) {
+      display: none;
+    }
+
+    @media (min-width: @desktop-width) {
+      display: block;
+    }
+  }
 }
 
 .page-header__download {
@@ -94,7 +127,7 @@
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
-  justify-content: space-around;
+  align-items: center;
   padding: 0 20px;
 }
 
@@ -119,31 +152,12 @@
   border-radius: 29px;
 }
 
-.page-header__download-apple,
-.page-header__download-android,
-.page-header__download-windows {
-  margin-right: 35px;
-  width: 56px;
-  height: 56px;
+.page-header__download-button {
+  display: block;
+  background: transparent;
   border: none;
-}
-
-.page-header__download-apple {
-  background-color: transparent;
-  background-image: url("../img/apple-logo.png");
-  background-repeat: no-repeat;
-}
-
-.page-header__download-android {
-  background-color: transparent;
-  background-image: url("../img/android-logo.png");
-  background-repeat: no-repeat;
-}
-
-.page-header__download-windows {
-  background-color: transparent;
-  background-image: url("../img/microsoft-logo.png");
-  background-repeat: no-repeat;
+  width: 60px;
+  height: 60px;
 }
 
 .page-header__prompt {

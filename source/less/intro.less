@@ -165,51 +165,42 @@
   &--effect {
     display: none;
 
-    @media (min-width: @tablet-width) {
-      display: block;
-      width: 100%;
-      grid-area: 4 / 1 / 5 / 3;
-    }
+    // @media (min-width: @tablet-width) {
+    //   display: block;
+    //   width: 100%;
+
+    // }
 
     @media (min-width: @tablet-width) {
       display: grid;
+      grid-area: 4 / 1 / 5 / 3;
       grid-template-columns: 1fr 2fr;
       grid-template-rows: auto auto auto;
 
-      &::before {
-        content: "";
-        display: block;
-        width: 298px;
-        height: 345px;
-        background: url("../img/round-diagram.png");
-        background-position: 0 0;
-        background-repeat: no-repeat;
-        background-size: 238px 276px;
-        grid-area: 1 / 1 / 4 / 3;
+      // &::before {
+      //   content: "";
+      //   display: block;
+      //   width: 298px;
+      //   height: 345px;
+      //   background: url("#effect-timer");
+      //   background-position: 0 0;
+      //   background-repeat: no-repeat;
+      //   background-size: 238px 276px;
+      //   grid-area: 1 / 1 / 4 / 3;
 
-        @media (min-resolution: 2dppx) {
-          background: url("../img/round-diagram@2x.png");
-          background-position: 0 0;
-          background-repeat: no-repeat;
-          background-size: 238px 276px;
-        }
-
-        @media (min-width: @desktop-width) {
-          background: url("../img/round-diagram-desktop.png");
-          background-position: 0 0;
-          background-repeat: no-repeat;
-          background-size: 298px 345px;
-
-          @media (min-resolution: 2dppx) {
-            background: url("../img/round-diagram-desktop@2x.png");
-            background-position: 0 0;
-            background-repeat: no-repeat;
-            background-size: 298px 345px;
-          }
-        }
-      }
+      //   @media (min-width: @desktop-width) {
+      //     background: url("#effect-timer");
+      //     background-position: 0 0;
+      //     background-repeat: no-repeat;
+      //     background-size: 298px 345px;
+      //   }
+      // }
     }
   }
+}
+
+.intro__item-diagram {
+  grid-area: 1 / 1 / 4 / 2;
 }
 
 .intro__title {
@@ -232,10 +223,7 @@
 
   &--last {
     grid-area: 1 / 2 / 2 / 3;
-
-    @media (min-width: @tablet-width) {
-      width: 310px;
-    }
+    text-align: left;
   }
 }
 
@@ -247,10 +235,7 @@
 
   &--last {
     grid-area: 2 / 2 / 3 / 3;
-
-    @media (min-width: @tablet-width) {
-      width: 310px;
-    }
+    text-align: left;
   }
 }
 
