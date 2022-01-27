@@ -1,16 +1,25 @@
 .pricing {
-  min-height: 506px;
-  padding: 140px 0 50px;
-  background: url("../img/grey-background-table.png") no-repeat;
+  padding-top: 140px;
+  padding-bottom: 70px;
+  background: linear-gradient(-190deg, rgba(255, 255, 255, 1) 70px, rgba(242, 242, 242, 1) 70px);
+
+  @media (min-width: @tablet-width) {
+    padding-left: 20px;
+    padding-right: 20px;
+    background: linear-gradient(-185deg, rgba(255, 255, 255, 1) 120px, rgba(242, 242, 242, 1) 120px);
+  }
 
   @media (min-width: @desktop-width) {
     padding: 0 130px;
+    padding-top: 159px;
+    padding-bottom: 98px;
   }
 }
 
 .pricing__table {
-  margin: 0 auto;
-  border: 2px solid rgba(229, 229, 229, 1);
+  width: 100%;
+  border-collapse: collapse;
+  border: none;
 }
 
 .pricing__hidden {
@@ -32,32 +41,75 @@
   font-weight: 300;
 }
 
-.pricing__header {
-  color: rgba(255, 255, 255, 1);
-  background-color: rgba(40, 54, 69, 1);
+.pricing__row {
+  background-color: rgba(255, 255, 255, 1);
 }
 
 .pricing__cell {
-  width: 153px;
-  margin: 0;
-  padding-left: 20px;
+  width: 300px;
+  box-sizing: border-box;
+  height: 59px;
   font-size: 14px;
-  line-height: 30px;
   font-weight: 400;
   text-transform: uppercase;
   text-align: center;
+  border-bottom: 2px solid rgba(229, 229, 229, 1);
+
+  @media (min-width: @tablet-width) {
+    width: 153px;
+    border: 2px solid rgba(229, 229, 229, 1);
+  }
+}
+
+.pricing__header {
+  position: relative;
+  height: 94px;
+  color: rgba(255, 255, 255, 1);
+  background-color: rgba(40, 54, 69, 1);
 
   @media (max-width: @mobile-only) {
-    width: 100%;
+    vertical-align: top;
   }
 
-  @media (min-width: @desktop-width) {
-    width: 234px;
+  @media (min-width: @tablet-width) and (max-width: @tablet-only) {
+    height: 75px;
+  }
+
+  @media (min-width: @tablet-width) {
+    border: 2px solid rgba(242, 242, 242, 1);
+  }
+
+  &--popular {
+    &::before {
+      content: "";
+      position: absolute;
+      left: 20px;
+      top: 0;
+      width: 74px;
+      height: 74px;
+      background-image: url("../img/hit-ribbon.svg");
+
+      @media (min-width: @tablet-width) and (max-width: @tablet-only) {
+        left: 0;
+        width: 61px;
+        height: 61px;
+      }
+    }
+  }
+
+  &--corner {
+    background-color: rgba(242, 242, 242, 1);
+    border-top: none;
+    border-left: none;
   }
 }
 
 .pricing__toggles {
-  text-align: center;
+  margin: 0;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
   @media (min-width: @tablet-width) {
     display: none;

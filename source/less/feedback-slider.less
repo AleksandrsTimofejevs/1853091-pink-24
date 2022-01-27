@@ -1,9 +1,16 @@
 .feedback-slider__wrapper {
   min-height: 364px;
   padding: 0 20px;
+  position: relative;
 
   @media (min-width: @desktop-width) {
+    min-height: 0;
     padding: 0 130px;
+    padding-top: 193px;
+    background-image: url("../img/quotes.svg");
+    background-repeat: no-repeat;
+    background-position: 50% 72px;
+    background-size: 79px 63px;
   }
 }
 
@@ -14,10 +21,13 @@
 }
 
 .feedback-slider__list {
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
   list-style-type: none;
-  position: relative;
+
+  @media (min-width: @desktop-width) {
+    width: 688px;
+  }
 }
 
 .feedback-slider__quote {
@@ -52,6 +62,11 @@
   line-height: 30px;
   font-weight: 700;
   font-style: normal;
+
+  @media (min-width: @desktop-width) {
+    font-size: 24px;
+    line-height: 30px;
+  }
 }
 
 .feedback-slider__author-description {

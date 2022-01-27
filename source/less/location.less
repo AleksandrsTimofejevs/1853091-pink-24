@@ -1,16 +1,70 @@
-.location__map {
+.location {
+  position: relative;
+  min-height: 200px;
   width: 100%;
-  border: none;
+  background: url("../img/triangle-white-footer.svg"), url("../img/map.jpg");
+  background-repeat: no-repeat, no-repeat;
+  background-size: 1200px 123px, contain;
+  background-position: 50% -90px, center;
 
-  @media (min-width: @mobile-width) {
-    height: 200px;
+  @media (min-resolution: 2dppx) {
+    background: url("../img/triangle-white-footer.svg"), url("../img/map@2x.jpg");
+    background-repeat: no-repeat, no-repeat;
+    background-size: 1200px 123px, contain;
+    background-position: 50% -90px, center;
   }
 
   @media (min-width: @tablet-width) {
-    height: 374px;
+    position: relative;
+    width: 100%;
+    min-height: 374px;
+    background: url("../img/triangle-white-footer.svg"), url("../img/map-tablet.jpg");
+    background-repeat: no-repeat, no-repeat;
+    background-size: 1200px 123px, contain;
+    background-position: 50% -90px, center;
+
+    @media (min-resolution: 2dppx) {
+      background: url("../img/triangle-white-footer.svg"), url("../img/map-tablet@2x.jpg");
+      background-repeat: no-repeat, no-repeat;
+      background-size: 1200px 123px, contain;
+      background-position: 50% -90px, center;
+    }
   }
 
   @media (min-width: @desktop-width) {
-    height: 502px;
+    position: relative;
+    width: 100%;
+    min-height: 502px;
+    background: url("../img/triangle-white-footer.svg"), url("../img/map-desktop.jpg");
+    background-repeat: no-repeat, no-repeat;
+    background-size: 1200px 123px, contain;
+    background-position: 50% 0, center;
+
+    @media (min-resolution: 2dppx) {
+      background: url("../img/triangle-white-footer.svg"), url("../img/map-desktop@2x.jpg");
+      background-repeat: no-repeat, no-repeat;
+      background-size: 1200px 123px, contain;
+      background-position: 50% 0, center;
+    }
+  }
+
+  &::before {
+    position: absolute;
+    top: 95px;
+    right: 142px;
+    content: "";
+    width: 36px;
+    height: 36px;
+    background-image: url("../img/location-tag.svg");
+
+    @media (min-width: @tablet-width) {
+      top: 200px;
+      right: 300px;
+    }
+
+    @media (min-width: @desktop-width) {
+      top: 280px;
+      right: 560px;
+    }
   }
 }
